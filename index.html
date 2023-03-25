@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Deep River Campground</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-image: url("images/header_bkgnd.png");
+  padding: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Brush Script MT";
+  font-size: 30px;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(12, 150, 12);
+  height: 192px;
+  padding-right: 15px;
+}
+
+.header img {
+    float: left;
+}
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #078730;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="grid-container">
+    <div class="header">
+        <img src="images/tree1.png" alt="">
+        <p style="text-align: left;"><strong>Deep River RV Park</strong> is THE Nature Park in town, conveniently located near All the new Project Megasites and the NC State Zoo.  
+            Enjoy the Peace and Quiet of this Scenic Hillside Park On the Historic Deep River, also with huge Fishing Lake, Hillside Trails and Swimming Pool, small Beach Area and just 3 minutes from the County Mall. </p>
+    </div>
+
+    <div class="left" id="leftNav">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#pictures">PICTURES</a></li>
+            <li><a href="#sitepictures">RV & TENT SITE PICTURES</a></li>
+            <li><a href="#aboutus">ABOUT US</a></li>
+            <li><a href="#amenities">AMENITIES</a></li>
+            <li><a href="#sitemap">SITE MAP</a></li>
+            <li><a href="#rate">RATE</a></li>
+            <li><a href="#localattractions">LOCAL ATTRACTIONS</a></li>
+            <li><a href="#guestreviews">GUEST REVIEWS</a></li>
+            <li><a href="#contactus">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="middle">
+        <p><strong>
+            Deep River Campground is a beautiful scenic hillside park, located on The Deep River. 
+            We also have a 5 Acre Stocked Fishing Lake, and 20 Acres of groomed nature trails. 
+            Near the Zoo but also convenient to Greensboro, we offer cabins and Full Service RV Sites,  
+            Our Pool on the hillside has the Best View in Town !  We also have laundry on site, 
+            a game room, play ground, and camp store.  We are the only campground with a 
+            Large Riverfront Park with an Historic Dam built in the mid- 1800's and a small 
+            Riverfront Beach with Beach Chairs.
+        </strong>
+        </p>
+    </div>  
+    <div class="right">
+        <img class="right_img" src="images/photo_1.jpg" alt=""><br />
+        <img class="right_img" src="images/photo_2.jpg" alt=""><br />
+        <img class="right_img" src="images/photo3.jpg" alt=""><br />
+        <img class="right_img" src="images/photo4.jpg" alt=""><br />
+    </div>
+
+    <div class="footer">
+    <p>Footer</p>
+    </div>
+</div>
 
 </body>
 </html>
+
+
