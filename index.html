@@ -2,131 +2,82 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles/main.css">
-    <title>Deep River Campground</title>
-<style>
-* {
-  box-sizing: border-box;
-}
+    <title>The Shepherd Hermas</title>
 
-/* Style the header */
-.header {
-  grid-area: header;
-  background-image: url("images/header_bkgnd.png");
-  padding: 30px;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-  font-family: "Brush Script MT";
-  font-size: 30px;
-  padding: 0;
-  overflow: hidden;
-  color: rgb(12, 150, 12);
-  height: 192px;
-  padding-right: 15px;
-}
-
-.header img {
-    float: left;
-}
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right' 
-    'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: #078730;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
-}
-</style>
 </head>
 <body>
+  <div id="header">
+    <h2 class="centered">Selections from The Shepherd Hermas</h2>
+  </div>
 
-<div class="grid-container">
-    <div class="header">
-        <img src="images/tree1.png" alt="">
-        <p style="text-align: left;"><strong>Deep River RV Park</strong> is THE Nature Park in town, conveniently located near All the new Project Megasites and the NC State Zoo.  
-            Enjoy the Peace and Quiet of this Scenic Hillside Park On the Historic Deep River, also with huge Fishing Lake, Hillside Trails and Swimming Pool, small Beach Area and just 3 minutes from the County Mall. </p>
+  <div id="main_content">
+    <div id="summary">
+      Selected verses from The Shepherd Hermas which mention the "Son", "the Son of God" or "the name of the Son of God".
     </div>
+    
+    <hr>
+    <div id="stationary">
+    <p>24. Now this law is the <strong>Son of God</strong>, 
+    who is preached to all the ends of the earth. The people that stand under its shadow, 
+    are those which have heard his preaching, and believed.
+  </p>
+    <p>46. His son is the Holy Spirit, the servant is the <strong>Son of God</strong></p>
+    <p>47. "...the commands which he gave to his people by his <strong>Son</strong>."</p>
+    <p>49. ..."Why said I, is the <strong>Son of God</strong> in this parable put in the place of a servant?"</p>
+    <p>50. The <strong>Son of God</strong> is [put in a position of] great power and authority</p>
+    <p>51. the <strong>Son</strong> set his messengers over those whom the Father delivered unto him, to keep every one of them...</p>
+    <p>52. He showed them the paths of life, giving them the law which he had received of the father.</p>
+    <p>53. He is the Lord of his people, having received all power from his Father</p>
+    <p>110. Hear, said he, O foolish man! and understand. The <strong>Son of God</strong> is indeed more ancient than any creature; 
+      insomuch that he was in council with his Father at the creation oft all things. 
+    </p>
+    <p>113. I answered, sir, I saw it. Thus,   said he, no man shall enter into the kingdom of God, but he who shall 
+    take upon him the <strong>name of the Son of God.</strong>
+  </p>
+    <p>115. I answered, Sir, how could I do otherwise? As therefore, said he, 
+    there would be no other way of entering into that city but by its gate, 
+    so neither can any one enter into the kingdom of God, but only by the 
+    <strong>name of his Son</strong>, who is most dear 
+    unto him. 
+  </p>
+    <p>117. With those is the Lord encompassed as with a wall: but the gate is the <strong>Son of God</strong>, 
+      who is the only way of coming unto God. For no man shall go to God, but by his <strong>Son.</strong>
+    </p>
+    <p>122. For it will avail thee nothing to take up the <strong>name of the Son of God</strong>, 
+    unless thou shalt also receive their garment from them.
+  </p>
+    <p>124. Therefore whosoever beareth the <strong>name of the Son of God</strong>, ought to bear their names also; 
+      for the <strong>Son of God</strong> also himself beareth their names.
+    </p>
+    
 
-    <div class="left" id="leftNav">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#pictures">PICTURES</a></li>
-            <li><a href="#sitepictures">RV & TENT SITE PICTURES</a></li>
-            <li><a href="#aboutus">ABOUT US</a></li>
-            <li><a href="#amenities">AMENITIES</a></li>
-            <li><a href="#sitemap">SITE MAP</a></li>
-            <li><a href="#rate">RATE</a></li>
-            <li><a href="#localattractions">LOCAL ATTRACTIONS</a></li>
-            <li><a href="#guestreviews">GUEST REVIEWS</a></li>
-            <li><a href="#contactus">CONTACT US</a></li>
-        </ul>
-    </div>
-    <div class="middle">
-        <p><strong>
-            Deep River Campground is a beautiful scenic hillside park, located on The Deep River. 
-            We also have a 5 Acre Stocked Fishing Lake, and 20 Acres of groomed nature trails. 
-            Near the Zoo but also convenient to Greensboro, we offer cabins and Full Service RV Sites,  
-            Our Pool on the hillside has the Best View in Town !  We also have laundry on site, 
-            a game room, play ground, and camp store.  We are the only campground with a 
-            Large Riverfront Park with an Historic Dam built in the mid- 1800's and a small 
-            Riverfront Beach with Beach Chairs.
-        </strong>
-        </p>
-    </div>  
-    <div class="right">
-        <img class="right_img" src="images/photo_1.jpg" alt=""><br />
-        <img class="right_img" src="images/photo_2.jpg" alt=""><br />
-        <img class="right_img" src="images/photo3.jpg" alt=""><br />
-        <img class="right_img" src="images/photo4.jpg" alt=""><br />
-    </div>
-
-    <div class="footer">
-    <p>Footer</p>
-    </div>
+    <p>128. Seeing, said he thou takest care to inquire diligently into all things, 
+    hear also concerning those stones which were rejected. All these received the <strong>name of the Son of God</strong>, 
+    and with that the power of these virgins- 
+  </p>
+    <p>138. Hear, said he: <strong>The name of the Son of God is great and without bounds, 
+      and the whole world is supported by it.</strong>
+    </p>
+  
+    <p>152. They therefore being dead, were nevertheless sealed with the seal of the <strong>Son of God</strong>, 
+      and so entered into the kingdom of God.
+  </p>
+    <p>153. For before a man receives the <strong>name of the Son of God</strong>, he is ordained unto death; 
+      but when he receives that seal, he is freed from death, and assigned unto life.
+  </p>
+  
+    <p>157. He answered, Because these Apostles and teachers, who preached the <strong>name of the Son of God</strong>, dying 
+    after they had received his faith and power, preached to them who were dead before: and they gave this seal to them.
+  </p>
+    <p>166. Because, replied he, all the nations which are under heaven, have heard and believed in the 
+      same one <strong>name of the Son of God</strong> by whom they are called. 
+    </p>
+    <p>235. Hearken, said he: Whosoever have suffered for the <strong>name of the Lord</strong> are esteemed honourable by the 
+    Lord; and all their offences are blotted out, because they have suffered death for the <strong>name of the Son</strong> of 
+    God. 
+  </p>
 </div>
-
+</div>
 </body>
 </html>
 
