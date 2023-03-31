@@ -3,17 +3,26 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #161616;
     padding: 0;
     margin: 0;
     font-size: 16px;
 }
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
 
-#header {
-    background: rgb(108, 150, 210);
+h1 {
+    text-align: center;
+}
+p.synopsis {
+    line-height: 170%;
+}
+.heading {
     padding: 10px;
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
 }
  #summary {
     padding: 10px 10px 0 10px;
